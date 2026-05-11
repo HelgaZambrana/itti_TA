@@ -24,7 +24,7 @@ percepción de producto y predicción de recompra.
 ---
 
 ## Estructura del proyecto
-
+```
 data/                         # datasets locales 
 │   └── Instacart/
 notebooks/
@@ -38,7 +38,7 @@ outputs/                      # gráficos y datasets intermedios generados
 src/
 │   └── utils.py              # paths y configuración global
 requirements.txt
-
+```
 ---
 
 ## Contenido por notebook
@@ -107,8 +107,7 @@ E-commerce para cohortes por tener `CustomerID` e `InvoiceDate`.
 Retailrocket para análisis de funnel por sus eventos de comportamiento.
 
 **Redefinición del target:** el target original (al menos un producto 
-reordenado) generaba 93% de positivos. Se redefinió como tasa de reorden 
->= 0.5 en el pedido de train, resultando en un dataset balanceado 
+reordenado) generaba 93% de positivos. Se redefinió como tasa de reorden >= 0.5 en el pedido de train, resultando en un dataset balanceado 
 (66,65% / 33,35%) sobre el que el modelo puede aprender patrones reales.
 
 **CustomerID nulos en e-commerce:** el 24,93% de registros no tiene 
